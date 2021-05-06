@@ -1,5 +1,4 @@
-ARG UBI_NODE_VERSION=12
-FROM registry.access.redhat.com/ubi8/nodejs-${UBI_NODE_VERSION}
+FROM registry.access.redhat.com/ubi8/nodejs:12-ubi8
 # This image provides a Node.JS environment you can use to build your Modern Web Applications
 COPY *.cer /etc/pki/ca-trust/source/anchors/
 USER root
